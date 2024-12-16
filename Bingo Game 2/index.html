@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compliance Week Bingo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Banner -->
+    <img src="banner.png" alt="Compliance Week" class="banner">
+  <div id="banner">
+ <div id="instructions">
+    <h2>Welcome to Compliance Week Bingo!</h2>
+    <p>
+        
+        Complete the activities listed in the grid. Each activity corresponds to a unique password that you should have received after finishing the activity. Enter the password for a completed activity in the input field below the grid. Then click "Submit". (Note: The passwords are case sensitive.) If the password is correct, the grid cell will turn green. If you enter an incorrect password, a message will display with a sad face emoji. Complete three activities in a row (horizontally, vertically, or diagonally) to win!</li>
+        </ol>
+        Have fun and good luck!
+    </p>
+</div>
+
+    <!-- Input for password -->
+   <input type="text" id="passwordInput" placeholder="Enter password">
+<button id="submitPassword">Submit</button>
+
+    <!-- The Bingo grid -->
+    <div id="grid" class="grid">
+        <!-- 3x3 grid cells -->
+        <!-- The free space is at the center -->
+  <div class="cell" data-row="0" data-col="0" data-password="Kirk">
+    <span class="activity-name">Audit Review</span>
+</div>
+<div class="cell" data-row="0" data-col="1" data-password="Picard">
+    <span class="activity-name">Data Compliance</span>
+</div>
+<div class="cell" data-row="0" data-col="2" data-password="Sisko">
+    <span class="activity-name">Report Accuracy</span>
+</div>
+<div class="cell" data-row="1" data-col="0" data-password="Janeway">
+    <span class="activity-name">Privacy Training</span>
+</div>
+<div class="cell free-space-cell correct" data-row="1" data-col="1">
+    <img src="free-space.png" alt="Free Space" class="free-space" />
+</div>
+<div class="cell" data-row="1" data-col="2" data-password="Archer">
+    <span class="activity-name">HR Regulations</span>
+</div>
+<div class="cell" data-row="2" data-col="0" data-password="Burnham">
+    <span class="activity-name">Security Meeting</span>
+</div>
+<div class="cell" data-row="2" data-col="1" data-password="Freeman">
+    <span class="activity-name">Team Compliance</span>
+</div>
+<div class="cell" data-row="2" data-col="2" data-password="Pike">
+    <span class="activity-name">Ethics Workshop</span>
+</div>
+
+
+    <script src="scripts.js"></script>
+</body>
+</html>

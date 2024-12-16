@@ -1,0 +1,95 @@
+#instructions {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin: 10px 0;
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+#instructions h2 {
+    margin-top: 0;
+    color: #00796b; /* Complementary color to the grid */
+}
+
+#instructions ol {
+    padding-left: 20px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 20px;
+    background-color: #f0f4f8;
+    margin: 0;
+}
+
+.banner {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+#passwordInput {
+    margin-top: 20px;
+    padding: 10px;
+    font-size: 16px;
+}
+
+button {
+    padding: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    font-size: 16px;
+    margin-left: 10px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 5px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.cell {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #e0f7fa;
+    border: 2px solid #00838F;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.cell:hover {
+    background-color: #b2ebf2;
+}
+
+.cell.correct {
+    background-color: #a5d6a7; /* Green */
+    color: white;             /* Text color for better readability */
+}
+
+
+.free-space-cell {
+    background-color: #a5d6a7; /* Same color as correct answers */
+    pointer-events: none;      /* Disable interaction */
+    border: 2px solid #00838F;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.free-space {
+    width: 100%;       /* Fill the width of the cell */
+    height: 100%;      /* Fill the height of the cell */
+    object-fit: cover; /* Maintain the aspect ratio */
+    display: block;
+}
